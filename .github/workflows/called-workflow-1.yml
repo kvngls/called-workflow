@@ -1,13 +1,14 @@
-name: Called Workflow
+name: Called Workflow 1
 on: workflow_dispatch
   
 jobs:
-  Echo-Message:
+  First-Concurrent-Job:
     runs-on: ubuntu-latest
     steps:
       - run: echo "This workflow was triggered by the Trigger Workflow and Wait GitHub Action 🎉"
       - run: sleep 10s
       # - run: exit 1
+      
   Second-Concurrent-Job:
     runs-on: ubuntu-latest
     steps:
